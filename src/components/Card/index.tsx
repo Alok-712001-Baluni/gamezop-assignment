@@ -36,7 +36,7 @@ const Card = ({
                   className="rounded-2xl cursor-pointer"
                   onClick={() => window.open(vI.url, "_blank")}
                 />
-                <Tooltip id="my-tooltip" />
+                <Tooltip id="my-tooltip" style={{ maxWidth: "400px" }} />
                 <div
                   className={`text-center text-xl font-semibold truncate overflow-hidden whitespace-nowrap mt-1 ${
                     isSmallScreen ? "w-[140px]" : "w-full"
