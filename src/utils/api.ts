@@ -1,5 +1,6 @@
 export const getAllGames = async () => {
   try {
+    // Didn't add this to env file so it is easy to run for whoever is running locally in their system
     const res = await fetch("https://pub.gamezop.com/v3/games?id=peSLSV");
 
     if (!res.ok) {

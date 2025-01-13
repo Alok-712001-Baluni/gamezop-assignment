@@ -1,4 +1,4 @@
-import MostPlayed from "../components/MostPlayed";
+import HighlyRated from "../components/HIghlyRated";
 import Action from "../components/Action";
 import Adventure from "../components/Adventure";
 import Arcade from "../components/Arcade";
@@ -15,7 +15,7 @@ export default async function Home() {
 
   return (
     <div className="scrollable">
-      <MostPlayed data={data.games} />
+      <HighlyRated data={data.games} />
       <Action data={data.games} showAllGames={false} />
       <Adventure data={data.games} showAllGames={false} />
       <Arcade data={data.games} showAllGames={false} />
