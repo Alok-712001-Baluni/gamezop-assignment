@@ -10,8 +10,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        bkg: "var(--color-bkg)",
-        content: "var(--color-content)",
+        customPurple: "#404380",
+        lightPurple: "#8789c3",
+        darkPurple: "#26284c",
+        customYellow: "#ffcc5b",
+        customBlue: "#3e51b5",
+        lightBlue: "#34b1ff",
+        primaryBlack: "#1e2333",
+        secondaryBlack: "#151823",
+        tertiaryBlack: "#222341",
+        customGray: "#8f9598",
+        lightGray: "#f0f1f9",
       },
       boxShadow: {
         "custom-light": "0 2px 13px rgba(0,0,0,0.095)",

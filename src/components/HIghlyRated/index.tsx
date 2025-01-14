@@ -17,7 +17,7 @@ const HighlyRated = ({ data }: HighlyRatedProps) => {
   const visibleItems = showAll ? mostPlayed : mostPlayed.slice(0, 8);
 
   return (
-    <div className="dark:bg-[#222341] border border-[#404380] ml-10 rounded-xl shadow-custom-games-container mt-5 px-8 max-sm:px-2 max-sm:mx-4">
+    <div className="dark:bg-tertiaryBlack border border-customPurple ml-10 rounded-xl shadow-custom-games-container mt-5 px-8 max-sm:px-2 max-sm:mx-4">
       <div className="flex justify-between items-center mt-4">
         <div className="font-bold text-2xl max-sm:text-sm">
           Highly Rated Games

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-[#26284c] text-white p-4 sticky top-0 z-20 shadow-custom-light">
+    <nav className="bg-white dark:bg-darkPurple text-white p-4 sticky top-0 z-20 shadow-custom-light">
       <div className="container mx-auto max-sm:hidden md:flex justify-evenly items-center">
         <Link href="/" className="text-2xl font-bold rounded-[10px]">
           <Logo width={140} height={39} />
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
       </div>
       {isSideBarOpen && (
-        <div className="fixed dark:bg-[#ff5434] bg-[#8f9598] bg inset-0 p-4">
+        <div className="fixed dark:bg-lightBlue bg-customGray bg inset-0 p-4">
           <div className="flex justify-between">
             <Link href="/" className="text-2xl font-bold rounded-[10px] block">
               <Logo width={100} height={30} />

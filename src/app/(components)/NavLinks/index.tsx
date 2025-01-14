@@ -24,9 +24,9 @@ const NavLinks = () => {
     <>
       <Link
         href="/action-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isActionGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -37,9 +37,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/adventure-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isAdventureGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -50,9 +50,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/arcade-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isArcadeGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -63,9 +63,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/puzzle-and-logic-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isPuzzleLogicGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -76,9 +76,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/sports-and-racing-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isSportsRacingGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -89,9 +89,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/strategy-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isStrategyGames
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >
@@ -102,9 +102,9 @@ const NavLinks = () => {
       </Link>
       <Link
         href="/favourite-games"
-        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+        className={`dark:bg-secondaryBlack dark:text-white bg-lightGray text-customBlue rounded-3xl w-max ${
           isFavourite
-            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            ? "dark:!bg-customYellow !bg-customBlue dark:!text-secondaryBlack !text-white"
             : ""
         }`}
       >

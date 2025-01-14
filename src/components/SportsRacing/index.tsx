@@ -28,7 +28,7 @@ const SportsRacing = ({ data, showAllGames = false }: SportsRacingProps) => {
 
   return (
     <div
-      className={`dark:bg-[#222341] border border-[#404380] ml-10 rounded-xl shadow-custom-games-container mt-5 px-8  max-sm:px-2 max-sm:mx-4 ${
+      className={`dark:bg-tertiaryBlack border border-customPurple ml-10 rounded-xl shadow-custom-games-container mt-5 px-8  max-sm:px-2 max-sm:mx-4 ${
         showAllGames ? "mr-8" : ""
       }`}
     >
