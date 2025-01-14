@@ -94,7 +94,7 @@ const Card = ({
                   ></i>
                 ) : (
                   <i
-                    className={`fa-regular fa-heart bg-white text-black w-6 h-6 rounded-xl text-center !leading-6 cursor-pointer absolute top-3 right-3 max-sm:right-9 ${
+                    className={`fa-regular fa-heart bg-white text-black w-6 h-6 rounded-xl text-center !leading-6 cursor-pointer absolute top-3 right-3 ${
                       showAllGames ? "max-sm:right-9" : "max-sm:right-0"
                     }`}
                     onClick={() => handleAddToFavourite(vI)}

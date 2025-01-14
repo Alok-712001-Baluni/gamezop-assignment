@@ -11,6 +11,7 @@
 2. PWA is incorporated in this application
 3. I have used React Suspense for asynchronous operation.
 4. Implemented both Server and Client components for optimal performance.
+5. Website is repsonsive in both desktop and mobile devices.
 
 ##What' s new that I have implemented:
 
