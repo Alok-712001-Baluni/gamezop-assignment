@@ -28,23 +28,19 @@ const Card = ({
         localStorage.getItem("Favourites") || "[]"
       );
 
-      // Check if the game is already in favourites
       const isAlreadyFavourite = existingFavourites.some(
         (item) => item.code === vI.code
       );
 
       let updatedFavourites;
       if (isAlreadyFavourite) {
-        // Remove the game if it's already a favourite
         updatedFavourites = existingFavourites.filter(
           (item) => item.code !== vI.code
         );
       } else {
-        // Add the game if it's not already a favourite
         updatedFavourites = [...existingFavourites, vI];
       }
 
-      // Save updated favourites to localStorage
       localStorage.setItem("Favourites", JSON.stringify(updatedFavourites));
     });
   };

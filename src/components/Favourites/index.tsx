@@ -14,7 +14,6 @@ const Favourites = ({ showAllGames = true }: ActionProps) => {
     Game[]
   >([]);
 
-  // Use useEffect to handle the localStorage call (client-side only)
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedFavourites = JSON.parse(
@@ -22,7 +21,7 @@ const Favourites = ({ showAllGames = true }: ActionProps) => {
       );
       setExistingFavouritesGames(storedFavourites);
     }
-  }, []); // Empty dependency array ensures this runs only once after the component mounts
+  }, []);
 
   const isSmallScreen = useIsSmallScreen();
 
