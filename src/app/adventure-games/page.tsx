@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Adventure from "../../components/Adventure";
 import { getAllGames } from "@/utils/api";
 
@@ -9,7 +9,9 @@ const ActionGames = async () => {
   }
   return (
     <div>
-      <Adventure data={data.games} showAllGames={true} />
+      <Suspense fallback={<p>Loading Arcade games................</p>}>
+        <Adventure data={data.games} showAllGames={true} />
+      </Suspense>
     </div>
   );
 };

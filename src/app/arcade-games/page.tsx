@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Arcade from "../../components/Arcade";
 import { getAllGames } from "@/utils/api";
 
@@ -10,7 +10,9 @@ const ArcadeGames = async () => {
 
   return (
     <div>
-      <Arcade data={data.games} showAllGames={true} />
+      <Suspense fallback={<p>Loading Arcade games...................</p>}>
+        <Arcade data={data.games} showAllGames={true} />
+      </Suspense>
     </div>
   );
 };

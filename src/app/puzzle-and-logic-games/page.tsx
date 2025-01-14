@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import PuzzleLogic from "../../components/PuzzleLogic";
 import { getAllGames } from "@/utils/api";
 
@@ -9,7 +9,11 @@ const ArcadeGames = async () => {
   }
   return (
     <div>
-      <PuzzleLogic data={data.games} showAllGames={true} />
+      <Suspense
+        fallback={<p>Loading Puzzle and Logic games.......................</p>}
+      >
+        <PuzzleLogic data={data.games} showAllGames={true} />
+      </Suspense>
     </div>
   );
 };

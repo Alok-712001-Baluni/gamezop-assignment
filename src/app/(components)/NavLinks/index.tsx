@@ -7,7 +7,7 @@ import ArcadeIcon from "@/app/(components)/icons/Arcade";
 import PuzzleLogicIcon from "@/app/(components)/icons/PuzzleLogic";
 import SportsRacingIcon from "@/app/(components)/icons/SportsRacing";
 import StrategyIcon from "@/app/(components)/icons/Strategy";
-import Favourites from "@/app/(components)/icons/Favourites";
+import FavouritesIcon from "@/app/(components)/icons/FavouritesIcon";
 
 const NavLinks = () => {
   const router = usePathname();
@@ -18,6 +18,7 @@ const NavLinks = () => {
   const isPuzzleLogicGames = router === "/puzzle-and-logic-games";
   const isSportsRacingGames = router === "/sports-and-racing-games";
   const isStrategyGames = router === "/strategy-games";
+  const isFavourite = router === "/favourite-games";
 
   return (
     <>
@@ -100,11 +101,15 @@ const NavLinks = () => {
         </div>
       </Link>
       <Link
-        href="#"
-        className="dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max"
+        href="/favourite-games"
+        className={`dark:bg-[#151823] dark:text-white bg-[#f0f1f9] text-[#3e51b5] rounded-3xl w-max ${
+          isFavourite
+            ? "dark:!bg-[#ffcc5b] !bg-[#3e51b5] dark:!text-[#151823] !text-white"
+            : ""
+        }`}
       >
         <div className="flex items-center justify-center py-2.5 px-6">
-          <Favourites />
+          <FavouritesIcon isActive={isFavourite} />
           <p className="text-sm mx-2">My Favourites</p>
         </div>
       </Link>
