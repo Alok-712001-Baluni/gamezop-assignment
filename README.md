@@ -1,22 +1,44 @@
-##How to run Project locally?
+## How to Run the Project Locally
 
-1. Clone the project
-2. write npm install to install all the dependencies.
-3. write npm run dev to run the app in development mode.
-4. Open the application in the specified port in the terminal.
+1. **Clone the project**:
 
-##About the Project:
+   ```bash
+   git clone <repository-url>
+   ```
 
-1. This project is built using Next.js and Typescript.
-2. PWA is incorporated in this application
-3. I have used React Suspense for asynchronous operation.
-4. Implemented both Server and Client components for optimal performance.
-5. Website is repsonsive in both desktop and mobile devices.
+2. **Install dependencies**:
+   Run the following command to install all required dependencies:
 
-##What' s new that I have implemented:
+   ```bash
+   npm install
+   ```
 
-1. Add Highly rated games section where the games rated above 4.5 are displayed.
-2. Add light and dark mode theme switcher at the top-right instead of bottom-right(like in the original website).
-3. Users can see all the games in the same page when they click on View more section instead of redirecting them to that page. If the user wants to redirect then they have to click on the navbar links.
-4. On Hover the user can see the details about the game in Tooltip section.
-5. In the original website when I add a game to favourite and then refresh the page, the icon is not active. Here it is fixed.
+3. **Run the application**:
+   Start the app in development mode by running:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the application**:
+   Open the application in your browser at the specified port (usually `http://localhost:3000`).
+
+---
+
+## About the Project
+
+- **Built with**: This project uses **Next.js** and **TypeScript** for better scalability and maintainability.
+- **PWA (Progressive Web App)**: The application is a PWA, which allows it to work offline and be installed on devices.
+- **React Suspense**: Used for handling asynchronous operations with better UX and loading states.
+- **Optimal Performance**: Combines both **Server** and **Client components** to maximize performance.
+- **Responsive Design**: The website is fully responsive and works seamlessly on both **desktop** and **mobile devices**.
+
+---
+
+## What's New in This Project
+
+- **Highly Rated Games**: Added a section that displays games rated above **4.5 stars** for users to easily find popular games.
+- **Light & Dark Mode Switcher**: The theme switcher is now located at the top-right, unlike the original website where it was in the bottom-right.
+- **View More Games**: Users can now view all the games on the same page by clicking on the "View more" section, rather than being redirected. However, if they prefer, they can click on the navbar links to navigate to the respective pages.
+- **Tooltip Details**: On hover, users can see detailed information about the game in a tooltip section for a better user experience.
+- **Persistent Favourites**: Fixed the issue where the favourite icon would not persist its state (active/inactive) after page refresh, ensuring that users' favourites are saved correctly.
