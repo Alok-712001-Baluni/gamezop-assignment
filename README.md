@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+##How to run Project locally?
 
-## Getting Started
+1. Clone the project
+2. write npm install to install all the dependencies.
+3. write npm run dev to run the app in development mode.
+4. Open the application in the specified port in the terminal.
 
-First, run the development server:
+##About the Project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. This project is built using Next.js and Typescript.
+2. PWA is incorporated in this application
+3. I have used React Suspense for asynchronous operation.
+4. Implemented both Server and Client components for optimal performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##What' s new that I have implemented:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Add Highly rated games section where the games rated above 4.5 are displayed.
+2. Add light and dark mode theme switcher at the top-right instead of bottom-right(like in the original website).
+3. Users can see all the games in the same page when they click on View more section instead of redirecting them to that page. If the user wants to redirect then they have to click on the navbar links.
+4. On Hover the user can see the details about the game in Tooltip section.
+5. In the original website when I add a game to favourite and then refresh the page, the icon is not active. Here it is fixed.
